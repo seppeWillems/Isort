@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>31DF8CA7-0497-42A9-BD51-91A0F18B9C7C</string>
+	<key>IDESourceControlProjectName</key>
+	<string>testje</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>E0B15558811D029B3C46B244CB4E5D0377D7370D</key>
+		<string>ssh://isort.cloudapp.net:22/opt/git/directory.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>testje/testje.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>E0B15558811D029B3C46B244CB4E5D0377D7370D</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://isort.cloudapp.net:22/opt/git/directory.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>E0B15558811D029B3C46B244CB4E5D0377D7370D</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E0B15558811D029B3C46B244CB4E5D0377D7370D</string>
+			<key>IDESourceControlWCCName</key>
+			<string>BachelorProefEuroGijbels</string>
+		</dict>
+	</array>
+</dict>
+</plist>
