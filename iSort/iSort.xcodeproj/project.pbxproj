@@ -14,6 +14,23 @@
 		F797389D1A35E2DD0054D24E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F797389C1A35E2DD0054D24E /* Images.xcassets */; };
 		F79738A01A35E2DD0054D24E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F797389E1A35E2DD0054D24E /* LaunchScreen.xib */; };
 		F79738AC1A35E2DD0054D24E /* iSortTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F79738AB1A35E2DD0054D24E /* iSortTests.swift */; };
+		F79738C71A35F07A0054D24E /* bar_chart-32.png in Resources */ = {isa = PBXBuildFile; fileRef = F79738B91A35F07A0054D24E /* bar_chart-32.png */; };
+		F79738C81A35F07A0054D24E /* cancel-32.png in Resources */ = {isa = PBXBuildFile; fileRef = F79738BA1A35F07A0054D24E /* cancel-32.png */; };
+		F79738C91A35F07A0054D24E /* checked_user-32.png in Resources */ = {isa = PBXBuildFile; fileRef = F79738BB1A35F07A0054D24E /* checked_user-32.png */; };
+		F79738CA1A35F07A0054D24E /* checkmark-32.png in Resources */ = {isa = PBXBuildFile; fileRef = F79738BC1A35F07A0054D24E /* checkmark-32.png */; };
+		F79738CB1A35F07A0054D24E /* info-32-2.png in Resources */ = {isa = PBXBuildFile; fileRef = F79738BD1A35F07A0054D24E /* info-32-2.png */; };
+		F79738CC1A35F07A0054D24E /* info-32.png in Resources */ = {isa = PBXBuildFile; fileRef = F79738BE1A35F07A0054D24E /* info-32.png */; };
+		F79738CD1A35F07A0054D24E /* login-32.png in Resources */ = {isa = PBXBuildFile; fileRef = F79738BF1A35F07A0054D24E /* login-32.png */; };
+		F79738CE1A35F07A0054D24E /* logout-32.png in Resources */ = {isa = PBXBuildFile; fileRef = F79738C01A35F07A0054D24E /* logout-32.png */; };
+		F79738CF1A35F07A0054D24E /* printer-32.png in Resources */ = {isa = PBXBuildFile; fileRef = F79738C11A35F07A0054D24E /* printer-32.png */; };
+		F79738D01A35F07A0054D24E /* remove_user-32.png in Resources */ = {isa = PBXBuildFile; fileRef = F79738C21A35F07A0054D24E /* remove_user-32.png */; };
+		F79738D11A35F07A0054D24E /* rfid_sensor-32.png in Resources */ = {isa = PBXBuildFile; fileRef = F79738C31A35F07A0054D24E /* rfid_sensor-32.png */; };
+		F79738D21A35F07A0054D24E /* rfid_signal-32.png in Resources */ = {isa = PBXBuildFile; fileRef = F79738C41A35F07A0054D24E /* rfid_signal-32.png */; };
+		F79738D31A35F07A0054D24E /* truck-32.png in Resources */ = {isa = PBXBuildFile; fileRef = F79738C51A35F07A0054D24E /* truck-32.png */; };
+		F79738D41A35F07A0054D24E /* update-32.png in Resources */ = {isa = PBXBuildFile; fileRef = F79738C61A35F07A0054D24E /* update-32.png */; };
+		F79738D81A35F1820054D24E /* edit-50.png in Resources */ = {isa = PBXBuildFile; fileRef = F79738D51A35F1820054D24E /* edit-50.png */; };
+		F79738D91A35F1820054D24E /* save_as-50.png in Resources */ = {isa = PBXBuildFile; fileRef = F79738D61A35F1820054D24E /* save_as-50.png */; };
+		F79738DA1A35F1820054D24E /* save-50.png in Resources */ = {isa = PBXBuildFile; fileRef = F79738D71A35F1820054D24E /* save-50.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +55,23 @@
 		F79738A51A35E2DD0054D24E /* iSortTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iSortTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F79738AA1A35E2DD0054D24E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F79738AB1A35E2DD0054D24E /* iSortTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iSortTests.swift; sourceTree = "<group>"; };
+		F79738B91A35F07A0054D24E /* bar_chart-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bar_chart-32.png"; sourceTree = "<group>"; };
+		F79738BA1A35F07A0054D24E /* cancel-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cancel-32.png"; sourceTree = "<group>"; };
+		F79738BB1A35F07A0054D24E /* checked_user-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "checked_user-32.png"; sourceTree = "<group>"; };
+		F79738BC1A35F07A0054D24E /* checkmark-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "checkmark-32.png"; sourceTree = "<group>"; };
+		F79738BD1A35F07A0054D24E /* info-32-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "info-32-2.png"; sourceTree = "<group>"; };
+		F79738BE1A35F07A0054D24E /* info-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "info-32.png"; sourceTree = "<group>"; };
+		F79738BF1A35F07A0054D24E /* login-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "login-32.png"; sourceTree = "<group>"; };
+		F79738C01A35F07A0054D24E /* logout-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logout-32.png"; sourceTree = "<group>"; };
+		F79738C11A35F07A0054D24E /* printer-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "printer-32.png"; sourceTree = "<group>"; };
+		F79738C21A35F07A0054D24E /* remove_user-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "remove_user-32.png"; sourceTree = "<group>"; };
+		F79738C31A35F07A0054D24E /* rfid_sensor-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rfid_sensor-32.png"; sourceTree = "<group>"; };
+		F79738C41A35F07A0054D24E /* rfid_signal-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rfid_signal-32.png"; sourceTree = "<group>"; };
+		F79738C51A35F07A0054D24E /* truck-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "truck-32.png"; sourceTree = "<group>"; };
+		F79738C61A35F07A0054D24E /* update-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "update-32.png"; sourceTree = "<group>"; };
+		F79738D51A35F1820054D24E /* edit-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "edit-50.png"; sourceTree = "<group>"; };
+		F79738D61A35F1820054D24E /* save_as-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "save_as-50.png"; sourceTree = "<group>"; };
+		F79738D71A35F1820054D24E /* save-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "save-50.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +113,7 @@
 		F79738901A35E2DD0054D24E /* iSort */ = {
 			isa = PBXGroup;
 			children = (
+				F79738B51A35ED5F0054D24E /* Assets */,
 				F79738931A35E2DD0054D24E /* AppDelegate.swift */,
 				F79738951A35E2DD0054D24E /* FirstViewController.swift */,
 				F79738971A35E2DD0054D24E /* SecondViewController.swift */,
@@ -113,6 +148,38 @@
 				F79738AA1A35E2DD0054D24E /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F79738B51A35ED5F0054D24E /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				F79738B61A35ED670054D24E /* Icons */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		F79738B61A35ED670054D24E /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				F79738D51A35F1820054D24E /* edit-50.png */,
+				F79738D61A35F1820054D24E /* save_as-50.png */,
+				F79738D71A35F1820054D24E /* save-50.png */,
+				F79738B91A35F07A0054D24E /* bar_chart-32.png */,
+				F79738BA1A35F07A0054D24E /* cancel-32.png */,
+				F79738BB1A35F07A0054D24E /* checked_user-32.png */,
+				F79738BC1A35F07A0054D24E /* checkmark-32.png */,
+				F79738BD1A35F07A0054D24E /* info-32-2.png */,
+				F79738BE1A35F07A0054D24E /* info-32.png */,
+				F79738BF1A35F07A0054D24E /* login-32.png */,
+				F79738C01A35F07A0054D24E /* logout-32.png */,
+				F79738C11A35F07A0054D24E /* printer-32.png */,
+				F79738C21A35F07A0054D24E /* remove_user-32.png */,
+				F79738C31A35F07A0054D24E /* rfid_sensor-32.png */,
+				F79738C41A35F07A0054D24E /* rfid_signal-32.png */,
+				F79738C51A35F07A0054D24E /* truck-32.png */,
+				F79738C61A35F07A0054D24E /* update-32.png */,
+			);
+			name = Icons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,9 +262,26 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F79738C81A35F07A0054D24E /* cancel-32.png in Resources */,
+				F79738D21A35F07A0054D24E /* rfid_signal-32.png in Resources */,
+				F79738C91A35F07A0054D24E /* checked_user-32.png in Resources */,
 				F797389B1A35E2DD0054D24E /* Main.storyboard in Resources */,
+				F79738CF1A35F07A0054D24E /* printer-32.png in Resources */,
+				F79738D91A35F1820054D24E /* save_as-50.png in Resources */,
 				F79738A01A35E2DD0054D24E /* LaunchScreen.xib in Resources */,
+				F79738D81A35F1820054D24E /* edit-50.png in Resources */,
+				F79738CC1A35F07A0054D24E /* info-32.png in Resources */,
 				F797389D1A35E2DD0054D24E /* Images.xcassets in Resources */,
+				F79738CD1A35F07A0054D24E /* login-32.png in Resources */,
+				F79738DA1A35F1820054D24E /* save-50.png in Resources */,
+				F79738CE1A35F07A0054D24E /* logout-32.png in Resources */,
+				F79738D31A35F07A0054D24E /* truck-32.png in Resources */,
+				F79738D11A35F07A0054D24E /* rfid_sensor-32.png in Resources */,
+				F79738D01A35F07A0054D24E /* remove_user-32.png in Resources */,
+				F79738CB1A35F07A0054D24E /* info-32-2.png in Resources */,
+				F79738CA1A35F07A0054D24E /* checkmark-32.png in Resources */,
+				F79738C71A35F07A0054D24E /* bar_chart-32.png in Resources */,
+				F79738D41A35F07A0054D24E /* update-32.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
