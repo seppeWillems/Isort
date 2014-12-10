@@ -35,9 +35,21 @@
                                 </connections>
                             </segmentedControl>
                             <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NG6-LI-uqt">
-                                <rect key="frame" x="16" y="215" width="736" height="733"/>
+                                <rect key="frame" x="16" y="216" width="736" height="733"/>
                                 <connections>
-                                    <segue destination="gRr-IX-YGf" kind="embed" id="3mj-YZ-23h"/>
+                                    <segue destination="ZG8-Jg-CWP" kind="embed" id="2ge-xm-DsY"/>
+                                </connections>
+                            </containerView>
+                            <containerView hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uFM-QX-kVp">
+                                <rect key="frame" x="16" y="216" width="736" height="733"/>
+                                <connections>
+                                    <segue destination="Hyp-s1-RWQ" kind="embed" id="lKu-Pk-G8o"/>
+                                </connections>
+                            </containerView>
+                            <containerView hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aYJ-6l-VrI">
+                                <rect key="frame" x="16" y="216" width="736" height="733"/>
+                                <connections>
+                                    <segue destination="RlS-Pg-qhg" kind="embed" id="ac9-0f-7wQ"/>
                                 </connections>
                             </containerView>
                         </subviews>
@@ -47,6 +59,8 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                     <connections>
                         <outlet property="containerRegistratie" destination="NG6-LI-uqt" id="3ey-rj-fSV"/>
+                        <outlet property="containerRegistratie2" destination="uFM-QX-kVp" id="q9w-21-UYK"/>
+                        <outlet property="containerRegistratie3" destination="aYJ-6l-VrI" id="X3n-wd-6lb"/>
                         <outlet property="headerLogo" destination="RMR-kM-RNX" id="zQR-na-XJa"/>
                         <outlet property="segmentControl" destination="892-ed-sjf" id="rsG-uy-b9v"/>
                     </connections>
@@ -315,31 +329,6 @@
             </objects>
             <point key="canvasLocation" x="-2040" y="1036"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="hvG-yV-GTA">
-            <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="gRr-IX-YGf" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="two-cO-WH1"/>
-                        <viewControllerLayoutGuide type="bottom" id="hQM-eH-Up4"/>
-                    </layoutGuides>
-                    <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="YGm-Lm-mhU">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <toolbarItems/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
-                    <connections>
-                        <segue destination="ZG8-Jg-CWP" kind="custom" identifier="Inkomend" customClass="inkomendSegue" id="9fc-9L-4Di"/>
-                        <segue destination="Hyp-s1-RWQ" kind="custom" identifier="uitgaand" customClass="UItgaandSegue" id="cUt-tW-GNa"/>
-                        <segue destination="RlS-Pg-qhg" kind="custom" identifier="beschadigd" customClass="beschadigdSegue" id="66r-3E-ogE"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ks9-tD-VXv" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-177" y="-1140"/>
-        </scene>
         <!--Uitgaand View Controller-->
         <scene sceneID="JUi-qN-xKX">
             <objects>
@@ -349,7 +338,7 @@
                         <viewControllerLayoutGuide type="bottom" id="iDU-gw-nKw"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Qjj-Jc-PdV">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="736" height="733"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ikh-IS-A0u">
@@ -361,7 +350,6 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2ne-aZ-DRn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -376,7 +364,7 @@
                         <viewControllerLayoutGuide type="bottom" id="zF6-8T-4sd"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="l6C-61-BD5">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="736" height="733"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IEJ-y4-EHM">
@@ -388,7 +376,6 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Tm-db-pVl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -403,19 +390,18 @@
                         <viewControllerLayoutGuide type="bottom" id="pRL-0K-8eX"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="i5r-eV-iQL">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="736" height="733"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gAC-Ub-ToZ">
-                                <rect key="frame" x="363" y="147" width="10" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="316" y="0.0" width="123" height="112"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="81"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZeC-2N-ldq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
