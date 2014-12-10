@@ -9,7 +9,7 @@
 import UIKit
 
 
-class UitgaandViewController: UIViewController {
+class UitgaandViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
