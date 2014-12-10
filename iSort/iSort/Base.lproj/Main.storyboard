@@ -19,18 +19,41 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="iSortLogo4.png" translatesAutoresizingMaskIntoConstraints="NO" id="RMR-kM-RNX">
                                 <rect key="frame" x="0.0" y="20" width="768" height="119"/>
                             </imageView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="892-ed-sjf">
+                                <rect key="frame" x="16" y="162" width="736" height="29"/>
+                                <color key="backgroundColor" red="0.83921568629999999" green="0.83921568629999999" blue="0.83921568629999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <segments>
+                                    <segment title="Inkomend">
+                                        <size key="contentOffset" width="-1" height="0.0"/>
+                                    </segment>
+                                    <segment title="Uitgaand"/>
+                                    <segment title="Beschadigd"/>
+                                </segments>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="indexChanged:" destination="9pv-A4-QxB" eventType="valueChanged" id="UWK-HE-bJx"/>
+                                </connections>
+                            </segmentedControl>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NG6-LI-uqt">
+                                <rect key="frame" x="16" y="215" width="736" height="733"/>
+                                <connections>
+                                    <segue destination="gRr-IX-YGf" kind="embed" id="3mj-YZ-23h"/>
+                                </connections>
+                            </containerView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Registratie" image="truck-32.png" id="acW-dT-cKf"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                     <connections>
+                        <outlet property="containerRegistratie" destination="NG6-LI-uqt" id="3ey-rj-fSV"/>
                         <outlet property="headerLogo" destination="RMR-kM-RNX" id="zQR-na-XJa"/>
+                        <outlet property="segmentControl" destination="892-ed-sjf" id="rsG-uy-b9v"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="741" y="-320"/>
+            <point key="canvasLocation" x="-1111" y="-1268"/>
         </scene>
         <!--Overzicht-->
         <scene sceneID="gaP-jl-PVC">
@@ -58,7 +81,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mDg-XN-jyT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-138" y="1250"/>
+            <point key="canvasLocation" x="-1111" y="1010"/>
         </scene>
         <!--Afmelden-->
         <scene sceneID="SnH-Df-Tis">
@@ -78,7 +101,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K1u-ag-8ja" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="2004"/>
+            <point key="canvasLocation" x="-1111" y="2184"/>
         </scene>
         <!--RFID-->
         <scene sceneID="wg7-f3-ORb">
@@ -189,7 +212,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="848"/>
+            <point key="canvasLocation" x="-1111" y="-128"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="2O7-RI-njm">
@@ -267,7 +290,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o0R-Ha-t90" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1100" y="-107"/>
+            <point key="canvasLocation" x="-2040" y="-116"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -290,7 +313,113 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-138" y="-36"/>
+            <point key="canvasLocation" x="-2040" y="1036"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="hvG-yV-GTA">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="gRr-IX-YGf" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="two-cO-WH1"/>
+                        <viewControllerLayoutGuide type="bottom" id="hQM-eH-Up4"/>
+                    </layoutGuides>
+                    <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="YGm-Lm-mhU">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                    <connections>
+                        <segue destination="ZG8-Jg-CWP" kind="custom" identifier="Inkomend" customClass="inkomendSegue" id="9fc-9L-4Di"/>
+                        <segue destination="Hyp-s1-RWQ" kind="custom" identifier="uitgaand" customClass="UItgaandSegue" id="cUt-tW-GNa"/>
+                        <segue destination="RlS-Pg-qhg" kind="custom" identifier="beschadigd" customClass="beschadigdSegue" id="66r-3E-ogE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ks9-tD-VXv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-177" y="-1140"/>
+        </scene>
+        <!--Uitgaand View Controller-->
+        <scene sceneID="JUi-qN-xKX">
+            <objects>
+                <viewController id="Hyp-s1-RWQ" customClass="UitgaandViewController" customModule="iSort" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aJM-Aa-bkp"/>
+                        <viewControllerLayoutGuide type="bottom" id="iDU-gw-nKw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Qjj-Jc-PdV">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ikh-IS-A0u">
+                                <rect key="frame" x="363" y="169" width="10" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2ne-aZ-DRn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="809" y="-1140"/>
+        </scene>
+        <!--Beschadigd View Controller-->
+        <scene sceneID="d3a-R2-8aC">
+            <objects>
+                <viewController id="RlS-Pg-qhg" customClass="BeschadigdViewController" customModule="iSort" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Mp9-yB-mD9"/>
+                        <viewControllerLayoutGuide type="bottom" id="zF6-8T-4sd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="l6C-61-BD5">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IEJ-y4-EHM">
+                                <rect key="frame" x="363" y="178" width="10" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Tm-db-pVl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="809" y="-9"/>
+        </scene>
+        <!--Inkomend View Controller-->
+        <scene sceneID="6ji-Nh-vFd">
+            <objects>
+                <viewController id="ZG8-Jg-CWP" customClass="InkomendViewController" customModule="iSort" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PY1-kR-Pdv"/>
+                        <viewControllerLayoutGuide type="bottom" id="pRL-0K-8eX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="i5r-eV-iQL">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gAC-Ub-ToZ">
+                                <rect key="frame" x="363" y="147" width="10" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZeC-2N-ldq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="809" y="-2323"/>
         </scene>
     </scenes>
     <resources>

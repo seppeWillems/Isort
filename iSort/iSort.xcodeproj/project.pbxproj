@@ -54,6 +54,9 @@
 		F717E1261A388A8200FB1EF5 /* SwitchCameraButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F717E1231A388A8200FB1EF5 /* SwitchCameraButton.swift */; };
 		F717E1281A3890F400FB1EF5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F717E1271A3890F400FB1EF5 /* LoginViewController.swift */; };
 		F717E12A1A3894D000FB1EF5 /* AfmeldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F717E1291A3894D000FB1EF5 /* AfmeldViewController.swift */; };
+		F741B5F01A38D488008322CD /* InkomendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F741B5EF1A38D488008322CD /* InkomendViewController.swift */; };
+		F741B5F21A38D49F008322CD /* UitgaandViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F741B5F11A38D49F008322CD /* UitgaandViewController.swift */; };
+		F741B5F41A38D4B3008322CD /* BeschadigdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F741B5F31A38D4B3008322CD /* BeschadigdViewController.swift */; };
 		F79738941A35E2DD0054D24E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F79738931A35E2DD0054D24E /* AppDelegate.swift */; };
 		F797389B1A35E2DD0054D24E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F79738991A35E2DD0054D24E /* Main.storyboard */; };
 		F797389D1A35E2DD0054D24E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F797389C1A35E2DD0054D24E /* Images.xcassets */; };
@@ -110,15 +113,18 @@
 		F717E10B1A385EEC00FB1EF5 /* iSortLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = iSortLogo.png; path = Assets/iSortLogo.png; sourceTree = "<group>"; };
 		F717E10D1A385F3600FB1EF5 /* IsortLogo2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = IsortLogo2.png; path = Assets/IsortLogo2.png; sourceTree = "<group>"; };
 		F717E10F1A385F8400FB1EF5 /* iSortLogo4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = iSortLogo4.png; path = Assets/iSortLogo4.png; sourceTree = "<group>"; };
-		F717E1111A38721500FB1EF5 /* RegistratieViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistratieViewController.swift; sourceTree = "<group>"; };
-		F717E1121A38721500FB1EF5 /* RFIDViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RFIDViewController.swift; sourceTree = "<group>"; };
-		F717E11A1A38799D00FB1EF5 /* StyleClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StyleClass.swift; sourceTree = "<group>"; };
-		F717E11C1A387EB700FB1EF5 /* OverzichtViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverzichtViewController.swift; sourceTree = "<group>"; };
+		F717E1111A38721500FB1EF5 /* RegistratieViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RegistratieViewController.swift; path = iSort/RegistratieViewController.swift; sourceTree = SOURCE_ROOT; };
+		F717E1121A38721500FB1EF5 /* RFIDViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RFIDViewController.swift; path = iSort/RFIDViewController.swift; sourceTree = SOURCE_ROOT; };
+		F717E11A1A38799D00FB1EF5 /* StyleClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StyleClass.swift; path = iSort/StyleClass.swift; sourceTree = SOURCE_ROOT; };
+		F717E11C1A387EB700FB1EF5 /* OverzichtViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OverzichtViewController.swift; path = iSort/OverzichtViewController.swift; sourceTree = SOURCE_ROOT; };
 		F717E1211A388A8200FB1EF5 /* QRCodeReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeReader.swift; sourceTree = "<group>"; };
 		F717E1221A388A8200FB1EF5 /* ReaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReaderView.swift; sourceTree = "<group>"; };
 		F717E1231A388A8200FB1EF5 /* SwitchCameraButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwitchCameraButton.swift; sourceTree = "<group>"; };
-		F717E1271A3890F400FB1EF5 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		F717E1291A3894D000FB1EF5 /* AfmeldViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AfmeldViewController.swift; sourceTree = "<group>"; };
+		F717E1271A3890F400FB1EF5 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = iSort/LoginViewController.swift; sourceTree = SOURCE_ROOT; };
+		F717E1291A3894D000FB1EF5 /* AfmeldViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AfmeldViewController.swift; path = iSort/AfmeldViewController.swift; sourceTree = SOURCE_ROOT; };
+		F741B5EF1A38D488008322CD /* InkomendViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InkomendViewController.swift; path = iSort/InkomendViewController.swift; sourceTree = SOURCE_ROOT; };
+		F741B5F11A38D49F008322CD /* UitgaandViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UitgaandViewController.swift; path = iSort/UitgaandViewController.swift; sourceTree = SOURCE_ROOT; };
+		F741B5F31A38D4B3008322CD /* BeschadigdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BeschadigdViewController.swift; path = iSort/BeschadigdViewController.swift; sourceTree = SOURCE_ROOT; };
 		F797388E1A35E2DD0054D24E /* iSort.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iSort.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F79738921A35E2DD0054D24E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F79738931A35E2DD0054D24E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -151,6 +157,10 @@
 		F717E1151A38726700FB1EF5 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				F741B5EF1A38D488008322CD /* InkomendViewController.swift */,
+				F741B5F11A38D49F008322CD /* UitgaandViewController.swift */,
+				F741B5F31A38D4B3008322CD /* BeschadigdViewController.swift */,
+				F741B5EE1A38D461008322CD /* registratie */,
 				F717E1111A38721500FB1EF5 /* RegistratieViewController.swift */,
 				F717E1121A38721500FB1EF5 /* RFIDViewController.swift */,
 				F717E11A1A38799D00FB1EF5 /* StyleClass.swift */,
@@ -195,6 +205,14 @@
 			);
 			name = EpsBakken;
 			sourceTree = "<group>";
+		};
+		F741B5EE1A38D461008322CD /* registratie */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = registratie;
+			path = iSort;
+			sourceTree = SOURCE_ROOT;
 		};
 		F79738851A35E2DD0054D24E = {
 			isa = PBXGroup;
@@ -432,11 +450,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				F717E1281A3890F400FB1EF5 /* LoginViewController.swift in Sources */,
+				F741B5F41A38D4B3008322CD /* BeschadigdViewController.swift in Sources */,
 				F717E1251A388A8200FB1EF5 /* ReaderView.swift in Sources */,
 				F717E1141A38721500FB1EF5 /* RFIDViewController.swift in Sources */,
 				F79738941A35E2DD0054D24E /* AppDelegate.swift in Sources */,
+				F741B5F01A38D488008322CD /* InkomendViewController.swift in Sources */,
 				F717E1261A388A8200FB1EF5 /* SwitchCameraButton.swift in Sources */,
 				F717E1241A388A8200FB1EF5 /* QRCodeReader.swift in Sources */,
+				F741B5F21A38D49F008322CD /* UitgaandViewController.swift in Sources */,
 				F717E11B1A38799D00FB1EF5 /* StyleClass.swift in Sources */,
 				F717E12A1A3894D000FB1EF5 /* AfmeldViewController.swift in Sources */,
 				F717E11D1A387EB700FB1EF5 /* OverzichtViewController.swift in Sources */,
