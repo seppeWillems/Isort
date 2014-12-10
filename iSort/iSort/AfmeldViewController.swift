@@ -11,12 +11,10 @@ import UIKit
 
 class AfmeldViewController: UIViewController {
     
-
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
     
+        //functie zal bij openen van de view automatisch naar loginpagina gaan
         navigationController?.popToRootViewControllerAnimated(true)
         
     }
