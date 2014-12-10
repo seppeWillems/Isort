@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Xaq-vM-fbp">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
@@ -7,7 +7,7 @@
         <!--Registratie-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
-                <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="iSort" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="9pv-A4-QxB" customClass="RegistratieViewController" customModule="iSort" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ia1-K6-d13"/>
                         <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
@@ -15,19 +15,27 @@
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="iSortLogo4.png" translatesAutoresizingMaskIntoConstraints="NO" id="RMR-kM-RNX">
+                                <rect key="frame" x="0.0" y="20" width="768" height="119"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Registratie" image="truck-32.png" id="acW-dT-cKf"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                    <connections>
+                        <outlet property="headerLogo" destination="RMR-kM-RNX" id="zQR-na-XJa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="-320"/>
+            <point key="canvasLocation" x="741" y="-320"/>
         </scene>
         <!--Overzicht-->
         <scene sceneID="gaP-jl-PVC">
             <objects>
-                <viewController id="vjM-VX-r97" sceneMemberID="viewController">
+                <viewController id="vjM-VX-r97" customClass="OverzichtViewController" customModule="iSort" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Re1-H2-EcT"/>
                         <viewControllerLayoutGuide type="bottom" id="kf9-wk-Qo8"/>
@@ -35,10 +43,18 @@
                     <view key="view" contentMode="scaleToFill" id="Gle-1P-ypQ">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="iSortLogo4.png" translatesAutoresizingMaskIntoConstraints="NO" id="rLB-Gh-neh">
+                                <rect key="frame" x="0.0" y="20" width="768" height="119"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Overzicht" image="bar_chart-32.png" id="buP-gn-aoL"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                    <connections>
+                        <outlet property="headerLogo" destination="rLB-Gh-neh" id="mwR-31-m09"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mDg-XN-jyT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -47,7 +63,7 @@
         <!--Afmelden-->
         <scene sceneID="SnH-Df-Tis">
             <objects>
-                <viewController id="ZZn-ka-cp5" sceneMemberID="viewController">
+                <viewController id="ZZn-ka-cp5" customClass="AfmeldViewController" customModule="iSort" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="1RK-hP-zeD"/>
                         <viewControllerLayoutGuide type="bottom" id="Aar-tr-XLy"/>
@@ -67,7 +83,7 @@
         <!--RFID-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
-                <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="iSort" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="8rJ-Kc-sve" customClass="RFIDViewController" customModule="iSort" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="L7p-HK-0SC"/>
                         <viewControllerLayoutGuide type="bottom" id="Djb-ko-YwX"/>
@@ -76,39 +92,188 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Second View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="zEq-FU-wV5">
-                                <rect key="frame" x="279" y="491" width="209.5" height="41.5"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="EPS-L.png" translatesAutoresizingMaskIntoConstraints="NO" id="YCM-8U-NAR">
+                                <rect key="frame" x="60" y="215" width="150" height="150"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="EPS-S.png" translatesAutoresizingMaskIntoConstraints="NO" id="9R1-TD-hcp">
+                                <rect key="frame" x="227" y="215" width="150" height="150"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="EPS-M.png" translatesAutoresizingMaskIntoConstraints="NO" id="8f5-vx-Bmh">
+                                <rect key="frame" x="392" y="215" width="150" height="150"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="EPS-H.png" translatesAutoresizingMaskIntoConstraints="NO" id="LbO-JH-L0d">
+                                <rect key="frame" x="559" y="215" width="150" height="150"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="EPS-P.png" translatesAutoresizingMaskIntoConstraints="NO" id="96D-Jx-dN2">
+                                <rect key="frame" x="60" y="373" width="150" height="150"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="EPS-T.png" translatesAutoresizingMaskIntoConstraints="NO" id="2hq-ri-Pfk">
+                                <rect key="frame" x="227" y="373" width="150" height="150"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="EPS-L-Klap.png" translatesAutoresizingMaskIntoConstraints="NO" id="MAH-pO-sV8">
+                                <rect key="frame" x="392" y="373" width="150" height="150"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="EPS-M-Klap.png" translatesAutoresizingMaskIntoConstraints="NO" id="bNh-o4-HcW">
+                                <rect key="frame" x="559" y="373" width="150" height="150"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="EPS-H-Klap.png" translatesAutoresizingMaskIntoConstraints="NO" id="x4S-F3-prp">
+                                <rect key="frame" x="60" y="531" width="150" height="150"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="EPS-T-Klap.png" translatesAutoresizingMaskIntoConstraints="NO" id="rXZ-mq-6JV">
+                                <rect key="frame" x="227" y="531" width="150" height="150"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="EPS-Klap410.png" translatesAutoresizingMaskIntoConstraints="NO" id="Y6h-Kl-e8t">
+                                <rect key="frame" x="392" y="531" width="150" height="150"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="EPS-Klap610.png" translatesAutoresizingMaskIntoConstraints="NO" id="kOD-Ne-QTT">
+                                <rect key="frame" x="559" y="531" width="150" height="150"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="EuroPallet.png" translatesAutoresizingMaskIntoConstraints="NO" id="JDc-uf-aHf">
+                                <rect key="frame" x="60" y="689" width="150" height="150"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Container.png" translatesAutoresizingMaskIntoConstraints="NO" id="4c5-qF-GQb">
+                                <rect key="frame" x="227" y="689" width="150" height="150"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="KoelBox.png" translatesAutoresizingMaskIntoConstraints="NO" id="VJC-HI-3iq">
+                                <rect key="frame" x="392" y="689" width="150" height="150"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="AardappelBox.png" translatesAutoresizingMaskIntoConstraints="NO" id="X1A-7L-AAT">
+                                <rect key="frame" x="559" y="689" width="150" height="150"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PuV-7f-IgR">
+                                <rect key="frame" x="60" y="868" width="649" height="56"/>
+                                <color key="backgroundColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <state key="normal" title="   PRINT" image="printer-32.png"/>
+                                <connections>
+                                    <action selector="printRFID:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="MUn-I5-jX4"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="iSortLogo4.png" translatesAutoresizingMaskIntoConstraints="NO" id="w3D-3D-dM8">
+                                <rect key="frame" x="0.0" y="20" width="768" height="119"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="RFID Afdrukken" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sp8-fd-slG">
+                                <rect key="frame" x="60" y="128" width="649" height="99"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaded by SecondViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NDk-cv-Gan">
-                                <rect key="frame" x="276" y="541" width="215.5" height="17"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="iSortLogo4.png" translatesAutoresizingMaskIntoConstraints="NO" id="E6U-J7-2Vg">
+                                <rect key="frame" x="0.0" y="20" width="768" height="119"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0Qj-wM-uZk">
+                                <rect key="frame" x="35" y="351" width="240" height="128"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UJa-yz-vvQ">
+                                <rect key="frame" x="35" y="487" width="240" height="128"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="i1i-b7-IyH">
+                                <rect key="frame" x="35" y="623" width="240" height="150"/>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="NDk-cv-Gan" firstAttribute="top" secondItem="zEq-FU-wV5" secondAttribute="bottom" constant="8" symbolic="YES" id="Day-4N-Vmt"/>
-                            <constraint firstItem="NDk-cv-Gan" firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="JgO-Fn-dHn"/>
-                            <constraint firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="qqM-NS-xev"/>
-                            <constraint firstAttribute="centerY" secondItem="zEq-FU-wV5" secondAttribute="centerY" id="qzY-Ky-pLD"/>
-                        </constraints>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="0Qj-wM-uZk"/>
+                                <exclude reference="UJa-yz-vvQ"/>
+                                <exclude reference="i1i-b7-IyH"/>
+                            </mask>
+                        </variation>
                     </view>
                     <tabBarItem key="tabBarItem" title="RFID" image="printer-32.png" id="cPa-gy-q4n"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                    <connections>
+                        <outlet property="headerLogo" destination="E6U-J7-2Vg" id="cEr-LU-Hbt"/>
+                        <outlet property="printRFID" destination="PuV-7f-IgR" id="g9J-YZ-yXZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="750" y="848"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="2O7-RI-njm">
+            <objects>
+                <navigationController navigationBarHidden="YES" id="Xaq-vM-fbp" sceneMemberID="viewController">
+                    <nil key="simulatedTopBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="d0L-jd-Vg8">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="JLV-8d-uTt" kind="relationship" relationship="rootViewController" id="2yX-Yt-ZYR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FP7-I8-lUd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2969" y="-116"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="wHd-aT-1rU">
+            <objects>
+                <viewController id="JLV-8d-uTt" customClass="LoginViewController" customModule="iSort" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yWT-X0-qgX"/>
+                        <viewControllerLayoutGuide type="bottom" id="zxe-NN-YtJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Op5-Vr-PBI">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iSortLogo4.png" translatesAutoresizingMaskIntoConstraints="NO" id="SKP-qT-PIa">
+                                <rect key="frame" x="0.0" y="20" width="768" height="119"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Scan je QR-Code" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6d5-qr-Ago">
+                                <rect key="frame" x="16" y="171" width="736" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="iSortLogo4.png" translatesAutoresizingMaskIntoConstraints="NO" id="srr-0i-iwJ">
+                                <rect key="frame" x="0.0" y="20" width="768" height="119"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PR5-8y-yW5">
+                                <rect key="frame" x="338" y="311" width="93" height="30"/>
+                                <state key="normal" title="AANMELDEN">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="49e-Tb-3d3" kind="show" id="NTA-A4-Vks"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tbz-GV-F18">
+                                <rect key="frame" x="361" y="347" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="SKP-qT-PIa"/>
+                                <exclude reference="Tbz-GV-F18"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="7Qe-a0-jBQ"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                    <connections>
+                        <outlet property="btnAanmelden" destination="PR5-8y-yW5" id="Ral-g0-WI2"/>
+                        <outlet property="headerLogo" destination="srr-0i-iwJ" id="qBW-ni-NNK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o0R-Ha-t90" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1100" y="-107"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
             <objects>
                 <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="VeU-ai-W2H"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
@@ -129,7 +294,24 @@
         </scene>
     </scenes>
     <resources>
+        <image name="AardappelBox.png" width="370" height="208"/>
+        <image name="Container.png" width="280" height="414"/>
+        <image name="EPS-H-Klap.png" width="336" height="252"/>
+        <image name="EPS-H.png" width="313" height="147"/>
+        <image name="EPS-Klap410.png" width="385" height="288"/>
+        <image name="EPS-Klap610.png" width="387" height="290"/>
+        <image name="EPS-L-Klap.png" width="347" height="260"/>
+        <image name="EPS-L.png" width="310" height="174"/>
+        <image name="EPS-M-Klap.png" width="339" height="254"/>
+        <image name="EPS-M.png" width="344" height="163"/>
+        <image name="EPS-P.png" width="238" height="318"/>
+        <image name="EPS-S.png" width="350" height="165"/>
+        <image name="EPS-T-Klap.png" width="347" height="260"/>
+        <image name="EPS-T.png" width="346" height="194"/>
+        <image name="EuroPallet.png" width="941" height="463"/>
+        <image name="KoelBox.png" width="279" height="427"/>
         <image name="bar_chart-32.png" width="32" height="32"/>
+        <image name="iSortLogo4.png" width="986" height="138"/>
         <image name="logout-32.png" width="32" height="32"/>
         <image name="printer-32.png" width="32" height="32"/>
         <image name="truck-32.png" width="32" height="32"/>

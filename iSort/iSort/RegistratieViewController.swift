@@ -8,11 +8,15 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
+class RegistratieViewController: UIViewController {
 
+    @IBOutlet weak var headerLogo: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+       
+        //Logo opmaak border onderaan afbeelding
+        StyleClass().borderBottom(headerLogo)
     }
 
     override func didReceiveMemoryWarning() {
