@@ -9,12 +9,19 @@
 import UIKit
 
 
-class InkomendViewController: UIViewController {
+class InkomendViewController: UITableViewController {
+    
+    
+
+      var bakken:[Bakken] = bakData
+    
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+
+        
         
     }
     
@@ -22,6 +29,33 @@ class InkomendViewController: UIViewController {
         super.didReceiveMemoryWarning()
         
     }
+    
+    override func numberOfSectionsInTableView(tableView: UITableView?) -> Int {
+        return 1
+    }
+    
+    override func tableView(tableView: UITableView?, numberOfRowsInSection section: Int) -> Int {
+        return bakken.count
+        
+    }
+    
+    
+override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("bakCell", forIndexPath: indexPath) as BakCell
+    
+    
+    let bak = bakken[indexPath.row] as Bakken
+    println(indexPath)
+    
+    
+    cell.naamLabel.text = bak.naam
+    
+    cell.bakImageView.image = UIImage(named: bak.afbeelding)
+    cell.txtAantal.text = cell.stepperValue
+        return cell
+    }
+    
+    
     
     
     
