@@ -48,19 +48,16 @@ class RegistratieViewController: UIViewController {
             containerRegistratie.hidden = false
             containerRegistratie2.hidden = true
             containerRegistratie3.hidden = true
-            println("inkomend")
             
         case 1:
             containerRegistratie.hidden = true
             containerRegistratie2.hidden = false
             containerRegistratie3.hidden = true
-            println("uitgaand")
 
         case 2:
             containerRegistratie.hidden = true
             containerRegistratie2.hidden = true
             containerRegistratie3.hidden = false
-            println("beschadigd")
 
         default:
             break;
@@ -78,7 +75,14 @@ class RegistratieViewController: UIViewController {
             switch swipeGesture.direction {
             case UISwipeGestureRecognizerDirection.Right:
                 
-                println("Swiped right")
+                if (segmentControl.selectedSegmentIndex == 2){
+                    segmentControl.selectedSegmentIndex = 1
+                    indexChanged(segmentControl)
+                } else if (segmentControl.selectedSegmentIndex == 1){
+                    segmentControl.selectedSegmentIndex = 0
+                    indexChanged(segmentControl)
+                }
+
             case UISwipeGestureRecognizerDirection.Left:
                 
                 if (segmentControl.selectedSegmentIndex == 0){
@@ -88,10 +92,7 @@ class RegistratieViewController: UIViewController {
                     segmentControl.selectedSegmentIndex = 2
                     indexChanged(segmentControl)
                 }
-                
-                
-                
-                println("Swiped Left")
+
             default:
                 break
             }
