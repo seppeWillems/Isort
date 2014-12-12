@@ -41,7 +41,7 @@ class InkomendViewController: UITableViewController {
     
     
 override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("bakCell", forIndexPath: indexPath) as BakCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("bakInkomendCell", forIndexPath: indexPath) as BakCell
     
     
     let bak = bakken[indexPath.row] as Bakken

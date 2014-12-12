@@ -57,6 +57,8 @@
 		F718EAD11A3ADAE500177E5A /* Bakken.swift in Sources */ = {isa = PBXBuildFile; fileRef = F718EAD01A3ADAE500177E5A /* Bakken.swift */; };
 		F718EAD31A3ADB6500177E5A /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F718EAD21A3ADB6400177E5A /* SampleData.swift */; };
 		F718EAD51A3ADC4200177E5A /* BakCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F718EAD41A3ADC4200177E5A /* BakCell.swift */; };
+		F718EB071A3B26D100177E5A /* LineChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = F718EB051A3B26D100177E5A /* LineChart.swift */; };
+		F718EB0A1A3B274600177E5A /* DotCALayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F718EB091A3B274600177E5A /* DotCALayer.swift */; };
 		F741B5F01A38D488008322CD /* InkomendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F741B5EF1A38D488008322CD /* InkomendViewController.swift */; };
 		F741B5F21A38D49F008322CD /* UitgaandViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F741B5F11A38D49F008322CD /* UitgaandViewController.swift */; };
 		F741B5F41A38D4B3008322CD /* BeschadigdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F741B5F31A38D4B3008322CD /* BeschadigdViewController.swift */; };
@@ -128,6 +130,8 @@
 		F718EAD01A3ADAE500177E5A /* Bakken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bakken.swift; sourceTree = "<group>"; };
 		F718EAD21A3ADB6400177E5A /* SampleData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
 		F718EAD41A3ADC4200177E5A /* BakCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BakCell.swift; sourceTree = "<group>"; };
+		F718EB051A3B26D100177E5A /* LineChart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineChart.swift; sourceTree = "<group>"; };
+		F718EB091A3B274600177E5A /* DotCALayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DotCALayer.swift; sourceTree = "<group>"; };
 		F741B5EF1A38D488008322CD /* InkomendViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InkomendViewController.swift; sourceTree = "<group>"; };
 		F741B5F11A38D49F008322CD /* UitgaandViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UitgaandViewController.swift; path = iSort/UitgaandViewController.swift; sourceTree = SOURCE_ROOT; };
 		F741B5F31A38D4B3008322CD /* BeschadigdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BeschadigdViewController.swift; path = iSort/BeschadigdViewController.swift; sourceTree = SOURCE_ROOT; };
@@ -163,7 +167,8 @@
 		F717E1151A38726700FB1EF5 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				F718EAD61A3AF80B00177E5A /* HulpInkomend */,
+				F718EAD71A3B262500177E5A /* HulpGrafieken */,
+				F718EAD61A3AF80B00177E5A /* HulpRegistratie */,
 				F741B5EF1A38D488008322CD /* InkomendViewController.swift */,
 				F741B5F11A38D49F008322CD /* UitgaandViewController.swift */,
 				F741B5F31A38D4B3008322CD /* BeschadigdViewController.swift */,
@@ -190,13 +195,22 @@
 			path = iSort/QRCodeReader;
 			sourceTree = SOURCE_ROOT;
 		};
-		F718EAD61A3AF80B00177E5A /* HulpInkomend */ = {
+		F718EAD61A3AF80B00177E5A /* HulpRegistratie */ = {
 			isa = PBXGroup;
 			children = (
 				F718EAD21A3ADB6400177E5A /* SampleData.swift */,
 				F718EAD41A3ADC4200177E5A /* BakCell.swift */,
 			);
-			name = HulpInkomend;
+			name = HulpRegistratie;
+			sourceTree = "<group>";
+		};
+		F718EAD71A3B262500177E5A /* HulpGrafieken */ = {
+			isa = PBXGroup;
+			children = (
+				F718EB091A3B274600177E5A /* DotCALayer.swift */,
+				F718EB051A3B26D100177E5A /* LineChart.swift */,
+			);
+			name = HulpGrafieken;
 			sourceTree = "<group>";
 		};
 		F71936001A383F830081CF17 /* EpsBakken */ = {
@@ -459,8 +473,10 @@
 			files = (
 				F717E1281A3890F400FB1EF5 /* LoginViewController.swift in Sources */,
 				F741B5F41A38D4B3008322CD /* BeschadigdViewController.swift in Sources */,
+				F718EB071A3B26D100177E5A /* LineChart.swift in Sources */,
 				F717E1251A388A8200FB1EF5 /* ReaderView.swift in Sources */,
 				F717E1141A38721500FB1EF5 /* RFIDViewController.swift in Sources */,
+				F718EB0A1A3B274600177E5A /* DotCALayer.swift in Sources */,
 				F79738941A35E2DD0054D24E /* AppDelegate.swift in Sources */,
 				F741B5F01A38D488008322CD /* InkomendViewController.swift in Sources */,
 				F718EAD51A3ADC4200177E5A /* BakCell.swift in Sources */,
